@@ -12,7 +12,7 @@ cd abro-retention/ &&
     	-o Abro-Tele2.json -t json --self-contained
     # Création du fichier d'annexe
     pandoc \
-	annexe.docx -o annexe.md
+	annexe.docx -o annexe.html
     pandoc \
 	annexe.docx -o annexe.tex && cat annexe0.tex annexe.tex annexe1.tex > annexe-tableau.tex
     pandoc \
@@ -42,7 +42,7 @@ cd abro-retention/ &&
 	--filter ../../exegetesDoc/filters/nettoyage-etendu.zsh
     # Création du fichier html
     pandoc \
-	-f markdown Abro-Tele2.md annexe.md \
+	-f markdown Abro-Tele2.md annexe.html \
 	-o Abro-Tele2.html -t html --wrap=none --self-contained --smart \
 	--filter pandoc-citeproc \
 	--filter ../../exegetesDoc/filters/html.zsh \
@@ -50,8 +50,8 @@ cd abro-retention/ &&
 	--filter ../../exegetesDoc/filters/nettoyage-etendu.zsh
     # Création d'un fichier markdown
     pandoc \
-	-f markdown Abro-Tele2.md annexe.md \
-	-o Abro-Tele2.html5 -t markdown --wrap=none --self-contained --smart \
+	-f markdown Abro-Tele2.md annexe.html \
+	-o Abro-Tele2.markdown -t markdown --wrap=none --self-contained --smart \
 	--reference-location=block --reference-links \
 	--filter pandoc-citeproc \
 	--filter ../../exegetesDoc/filters/html.zsh \
