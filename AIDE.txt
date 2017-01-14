@@ -1,0 +1,34 @@
+
+                 AIDE
+
+
+Pour compiler, il faut les outils, voir https://github.com/hugoroy/exegetesDoc
+
+
+Ensuite, il suffit de lancer les scripts trouvés ici. Attention, pour
+qu'un script puisse s'exécuter, il doit être exécutable.
+
+Sur UNIX il suffit de lancer la commande "chmod +x" pour chaque
+fichier ".sh". Par exemple, pour le script qui permet de lancer tous
+les autres scripts :
+
+     chmod +x compile-all.sh
+     chmod +x compile-prishield-intervention.sh
+     chmod +x compile-tes-req-intro.sh
+     chmod +x (etc.)
+
+Il y a d'autres scripts à mettre en exécutable :
+
+     chmod +x ../exegetesDoc/filters/docx.zsh
+     chmod +x ../exegetesDoc/filters/html.zsh
+     chmod +x ../exegetesDoc/filters/latex.zsh
+     chmod +x ../exegetesDoc/filters/loi.py
+     chmod +x ../exegetesDoc/filters/nettoyage.zsh
+     chmod +x ../exegetesDoc/filters/paranumero.bash
+
+Puis de lancer la commande de compilation voulue, par exemple :
+
+     ./compile-all.sh
+
+
+Si erreur de compilation LaTeX faire "Entrée" et si cela ne fonctionne toujours pas, faire "X" (majuscule)
