@@ -51,7 +51,7 @@ cd abro-retention/ &&
     # Création d'un fichier markdown
     pandoc \
 	-f markdown Abro-Tele2.md annexe.html \
-	-o Abro-Tele2.markdown -t markdown --wrap=none --self-contained --smart \
+	-o Abro-Tele2.txt -t markdown --wrap=none --self-contained --smart \
 	--reference-location=block --reference-links \
 	--filter pandoc-citeproc \
 	--filter ../../exegetesDoc/filters/html.zsh \
