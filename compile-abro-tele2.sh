@@ -28,8 +28,8 @@ cd abro-retention/ &&
 	--filter pandoc-latex-environment \
 	--filter ../../exegetesDoc/filters/paranumero.bash
     # Création du PDF avec LaTeX
-    pdflatex Abro-Tele2.tex &&
-    pdflatex Abro-Tele2.tex &&
+    pdflatex -interaction=nonstopmode Abro-Tele2.tex &&
+    pdflatex -interaction=nonstopmode Abro-Tele2.tex &&
     rm *.aux && rm *.out && rm *.log 
     # Création du fichier docx
     pandoc \
